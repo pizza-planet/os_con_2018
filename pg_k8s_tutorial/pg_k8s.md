@@ -132,3 +132,11 @@
 
 # DEMO
 * everything is in `/script` at `jberkus/pgKubernetesTutorial`
+* Leader Election
+
+### Failover
+* master vanishes
+* replica grabs the lock
+* winner checks replication status
+* appoints as new master
+* k8s boots nodes to minimum scale again
