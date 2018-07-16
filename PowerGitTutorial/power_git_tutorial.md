@@ -2,6 +2,7 @@
 
 Speaker: [Brent Laster](https://twitter.com/BrentCLaster)
 * Author of "Professional Git" and "Up & Running with Jenkins 2"
+* "out there"
 
 ## Agenda
 * Merging and rebasing
@@ -170,3 +171,24 @@ Speaker: [Brent Laster](https://twitter.com/BrentCLaster)
 * changing email address on commits
   * use env filters
   * GIT_AUTHOR_EMAIL must be exported
+
+# FINAL NOTES
+## Rebasing
+* `git rebase -i HEAD~3`
+  * head is the last commit I want, let's change everything else
+* rebase interactive screen has all the info you need
+  * pick, reword, edit, squash, drop, etc
+  * `git rebase --continue` to keep going
+  * reword will prompt the editor again, sometimes really quickly
+
+## Notes
+* you can add notes to a commit without perturbing the sha1 hash of the commit
+* use case: code review
+* `git notes add -m "check it out"`
+  * `--ref` as a filter
+
+## git grep
+* similar to OS grep command
+* `git grep database -- *.java`
+* `git grep -p` says to show header of method of function where it was found
+* `--cached` to search in staging area (in other places too)
