@@ -31,3 +31,8 @@
 
 # THE NOTES ARE ALL ON THE SLIDES
 * https://github.com/christian-posta/istio-workshop
+
+# What's What
+* Envoy - a service proxy for routing and discovery of services
+* Istio - a service mesh for service proxies to configure (and reconfigure) a fleet of envoy proxies
+* Helm - a package manager for Istio
