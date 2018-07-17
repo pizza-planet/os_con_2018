@@ -191,3 +191,15 @@ done
 
 * `seq 1 100 | xargs -n1 -P5 ./script.sh 5`
   * xargs works like a queue to run 5 in parallel at a time? Wow.
+* `trap` command functionality
+
+```bash
+# in cleanup.sh
+function cleanup() {
+  rm -rf /temp
+}
+
+trap cleanup EXIT
+```
+
+* `set` command - set the level of warnings you want to happen
