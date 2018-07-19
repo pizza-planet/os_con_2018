@@ -1,5 +1,6 @@
 # What Worker for (Netflix) May Not Work For You
 * Subbu Allamaraju / @sallamar
+* Question at end of the talk: "sooo... what works for netflix but didn't work for Expedia?"
 
 # Expedia
 * 75 Countries, 93 Currencies, 67 Languages
